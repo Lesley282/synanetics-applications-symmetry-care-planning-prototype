@@ -1,0 +1,21 @@
+.confirm-modal {
+  &__body {
+    color: var(--color-text-standard-primary);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__checkbox {
+    margin-top: 16px;
+    border-radius: var(--border-radius-200);
+
+    &.shake {
+      color: var(--color-text-error);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

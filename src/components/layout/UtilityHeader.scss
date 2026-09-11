@@ -1,0 +1,102 @@
+.utility-header {
+  display: flex;
+  flex: 0 0 48px;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-color-divider);
+  background: var(--color-white-100);
+  padding: 0 16px;
+  height: 48px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  &__logo {
+    flex: none;
+    border-radius: 6px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+  }
+
+  &__wordmark {
+    color: var(--color-navy-100);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: var(--font-family-wordmark);
+    white-space: nowrap;
+  }
+
+  &__divider {
+    flex: none;
+    background: var(--color-grey-110);
+    width: 1px;
+    height: 20px;
+  }
+
+  &__powered {
+    color: var(--color-text-standard-secondary);
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  &__version {
+    border-radius: var(--border-radius-full);
+    background: var(--color-grey-90);
+    padding: 3px 10px;
+    color: var(--color-charcoal-90);
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  &__center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+  }
+
+  &__username {
+    color: var(--color-text-standard-primary);
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &__icon-btn {
+    display: inline-flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--color-grey-110);
+    border-radius: 6px;
+    background: var(--color-white-100);
+    width: 32px;
+    height: 32px;
+    color: var(--color-navy-100);
+
+    &:hover {
+      background: var(--color-aqua-100);
+    }
+
+    &--borderless {
+      border-color: transparent;
+      background: transparent;
+
+      &:hover {
+        background: var(--color-grey-90);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 32px;
+    color: var(--color-text-standard-secondary);
+    text-align: center;
+  }
+}

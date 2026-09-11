@@ -1,0 +1,60 @@
+.save-split-button {
+  display: flex;
+  position: relative;
+  align-items: stretch;
+
+  .synui-Button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top-right-radius: var(--border-radius-button);
+    border-bottom-right-radius: var(--border-radius-button);
+    background: var(--color-fill-button-standard-primary-default);
+    width: 28px;
+    color: var(--color-text-button-standard-primary-default);
+
+    &:hover {
+      background: var(--color-fill-button-standard-primary-hover);
+      color: var(--color-text-button-standard-primary-hover);
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 20;
+    margin: 0;
+    box-shadow: var(--shadow-100);
+    border: 1px solid var(--border-color-divider);
+    border-radius: var(--border-radius-200);
+    background: var(--color-white-100);
+    padding: 6px;
+    min-width: 180px;
+    list-style: none;
+
+    button {
+      display: block;
+      cursor: pointer;
+      border: none;
+      border-radius: var(--border-radius-100);
+      background: none;
+      padding: 8px 10px;
+      width: 100%;
+      font-size: 14px;
+      text-align: left;
+
+      &:hover {
+        background: var(--color-aqua-80);
+      }
+    }
+  }
+}

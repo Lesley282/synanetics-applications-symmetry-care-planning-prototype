@@ -1,0 +1,51 @@
+.dev-sim-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+  font-size: 13px;
+
+  &__toggle {
+    cursor: pointer;
+    box-shadow: var(--shadow-100);
+    border: 1px dashed var(--color-charcoal-90);
+    border-radius: var(--border-radius-full);
+    background: var(--color-white-100);
+    padding: 8px 14px;
+    color: var(--color-charcoal-90);
+  }
+
+  &__body {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 8px);
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: var(--shadow-200);
+    border: 1px dashed var(--color-charcoal-90);
+    border-radius: var(--border-radius-200);
+    background: var(--color-white-100);
+    padding: 12px;
+    width: 220px;
+  }
+
+  &__hint {
+    margin: 0 0 4px;
+    color: var(--color-text-standard-secondary);
+    font-size: 11px;
+  }
+
+  &__item {
+    cursor: pointer;
+    border: 1px solid var(--color-grey-110);
+    border-radius: var(--border-radius-100);
+    background: var(--color-grey-90);
+    padding: 6px 8px;
+    text-align: left;
+
+    &:hover {
+      background: var(--color-aqua-80);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use './styles/reset.scss';
+@use '@synanetics/syn-library/core';
+@use '@synanetics/syn-library/synanetics' as *;
+
+:root {
+  --font-family-wordmark: 'Quicksand', sans-serif;
+  --font-family-brand-body: 'Lato', sans-serif;
+  --font-family-brand-heading: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-fill-surface-default);
+  color: var(--color-text-standard-primary);
+  font-family: var(--font-family-brand-body);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+}
+
+button {
+  font-family: inherit;
+}
+
+@keyframes shake-x {
+  10%,
+  90% {
+    transform: translateX(-1px);
+  }
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-4px);
+  }
+  40%,
+  60% {
+    transform: translateX(4px);
+  }
+}
+
+.shake {
+  animation: shake-x 400ms ease-in-out;
+}

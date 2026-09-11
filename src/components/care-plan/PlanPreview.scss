@@ -1,0 +1,48 @@
+.plan-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__section-header {
+    border-radius: var(--border-radius-200);
+    background: #c8bddf;
+    padding: 8px 12px;
+    color: var(--color-navy-100);
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__field-label {
+    color: var(--color-text-standard-secondary);
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  &__field-value {
+    margin: 0;
+    color: var(--color-text-standard-primary);
+    font-size: 14px;
+
+    &--empty {
+      display: inline-block;
+      border: 1px dashed var(--color-grey-120);
+      border-radius: var(--border-radius-200);
+      padding: 8px 10px;
+      width: fit-content;
+      color: var(--color-text-placeholder);
+      font-style: italic;
+    }
+  }
+}

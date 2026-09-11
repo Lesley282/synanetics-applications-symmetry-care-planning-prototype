@@ -1,0 +1,35 @@
+.status-pill {
+  &__icon {
+    vertical-align: -2px;
+    margin-right: 4px;
+    width: 14px;
+    height: 14px;
+  }
+
+  &__completeness {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--saving,
+  &--in-draft {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@keyframes status-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.status-pill__pulse {
+  animation: status-pulse 1.1s ease-in-out infinite;
+  margin-right: 6px;
+  color: var(--color-charcoal-90);
+}

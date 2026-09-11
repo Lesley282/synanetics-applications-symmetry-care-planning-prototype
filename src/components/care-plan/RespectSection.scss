@@ -1,0 +1,42 @@
+.respect-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  // !important: beats @synanetics/syn-library's own .accordion__button[slot="trigger"]
+  // rule (background: none, padding: 0), which otherwise wins on specificity.
+  &__header {
+    border-radius: var(--border-radius-200);
+    background: #c8bddf !important;
+    padding: 8px 12px !important;
+    color: var(--color-navy-100);
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  &__documents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__slider-value {
+    margin: -8px 0 0;
+    color: var(--color-navy-100);
+    font-weight: 600;
+    font-size: 13px;
+  }
+}
